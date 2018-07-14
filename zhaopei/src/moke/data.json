@@ -1,0 +1,57 @@
+[{
+    "data": [{
+        "src": "images/3.png",
+        "title": "北京首都国际机场酒店",
+        "price": "￥268",
+        "grade": "4.3分",
+        "rand": "四星级",
+        "place": "首都机场 新国展",
+        "distance": "23.2公里",
+        "id": 1
+    }, {
+        "src": "images/2.png",
+        "title": "北京亚奥国际酒店",
+        "price": "￥398",
+        "grade": "4.3分",
+        "rand": "高档型",
+        "place": "马甸 安贞 科技馆",
+        "distance": "10.6公里",
+        "id": 2
+    }, {
+        "src": "images/3.png",
+        "title": "北京首都国际机场酒店",
+        "price": "￥268",
+        "grade": "4.3分",
+        "rand": "四星级",
+        "place": "首都机场 新国展",
+        "distance": "23.2公里",
+        "id": 3
+    }, {
+        "src": "images/2.png",
+        "title": "北京亚奥国际酒店",
+        "price": "￥398",
+        "grade": "4.3分",
+        "rand": "高档型",
+        "place": "马甸 安贞 科技馆",
+        "distance": "10.6公里",
+        "id": 4
+    }, {
+        "src": "images/3.png",
+        "title": "北京首都国际机场酒店",
+        "price": "￥268",
+        "grade": "4.3分",
+        "rand": "四星级",
+        "place": "首都机场 新国展",
+        "distance": "23.2公里",
+        "id": 5
+    }, {
+        "src": "images/2.png",
+        "title": "北京亚奥国际酒店",
+        "price": "￥398",
+        "grade": "4.3分",
+        "rand": "高档型",
+        "place": "马甸 安贞 科技馆",
+        "distance": "10.6公里",
+        "id": 6
+    }]
+}]

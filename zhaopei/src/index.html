@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telphone=no, email=no,address=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/swiper-4.2.2.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="">北京</a>
+            <span>假日旅行</span>
+            <a href=""></a>
+        </header>
+        <div class="swiper-container ban">
+            <div class="swiper-wrapper">
+                <script id="mySwiper" type="text/x-handlebars-template">
+                    {{#each this}}
+                    <div class="swiper-slide">
+                        <img src={{src}}>
+                    </div>
+                    {{/each}}
+                </script>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section>
+            <div class="scroll">
+                <div class="box">
+                    <h3 class="add-in">
+                        下拉加载更多
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/app/require.js" async='true' defer data-main='js/config/config.js'></script>
+    <script id="list" type="text/x-handlebars-template">
+        {{#each this}}
+        <div class="con" data-id={{id}}>
+            <dl>
+                <dt>
+                    <img src={{src}}>
+                </dt>
+                <dd>
+                    <h3>
+                        {{title}}
+                    </h3>
+                    <p>
+                        <span>
+                            限时抢购
+                        </span>
+                        <b>{{price}}<i>起</i></b>
+                    </p>
+                    <div>
+                        <span>{{grade}}</span>
+                        <span>{{rand}}</span>
+                        <i class="icon iconfont icon-WIFI"></i>
+                        <span>P</span>
+                    </div>
+                    <h4>
+                        <span>
+                            <em>
+                                {{place}}
+                            </em>
+                        </span>
+                        <strong>{{distance}}</strong>
+                    </h4>
+                </dd>
+            </dl>
+        </div>
+        {{/each}}
+    </script>
+</body>
+
+</html>
