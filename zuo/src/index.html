@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="./css/styls.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>北京<span>登陆</span></header>
+        <!-- <div class="banner"> -->
+        <div class="banner swiper-container">
+            <div class="swiper-wrapper">
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script type="text/x-handlebars-template" id="swipertpl">
+            {{#each this}}
+            <div class="swiper-slide"><img src="{{url}}" alt=""></div>
+            {{/each}}
+        </script>
+        <!-- </div> -->
+        <section>
+            <div class="box">
+                <div up='上拉加载' down='下拉刷新'>
+                    <div class="con">
+                        <!-- <dl>
+                            <dt><img src="img/02.png" alt=""></dt>
+                            <dd>
+                                <h2>北京亚奥国际酒店</h2>
+                                <p class="a"><span class="c">限时抢购</span><span><b class="d">￥268</b>起</span></p>
+                                <p class="e"><span>4.3分</span><span>高档型</span> <span>P</span></p>
+                                <p class="b"><span><i class="icon iconfont icon-dingwei"></i></span>
+                                    <span>马甸、安贞、科技馆</span><span>23.2公里</span></p>
+                                <div>
+                                    <span><i class="icon iconfont icon-chevron-thin-right"></i></span>
+                                </div>
+                            </dd>
+                        </dl> -->
+                    </div>
+                </div>
+            </div>
+            <script type="text/x-handlebars-template" id="listtpl">
+                {{#each this}}
+                <dl data-id='{{id}}'>
+                    <dt><img src="img/02.png" alt=""></dt>
+                    <dd>
+                        <h2>{{h2}}</h2>
+                        <p class="a"><span class="c">限时抢购</span><span><b class="d">{{jin}}</b>起</span></p>
+                        <p class="e"><span>4.3分</span><span>高档型</span> <span>P</span></p>
+                        <p class="b"><span><i class="icon iconfont icon-dingwei"></i></span>
+                            <span>马甸、安贞、科技馆</span><span>{{gong}}</span></p>
+                        <div>
+                            <span><i class="icon iconfont icon-chevron-thin-right"></i></span>
+                        </div>
+                    </dd>
+                </dl>
+                {{/each}}
+            </script>
+        </section>
+    </div>
+    <script src="js/libs/handlebars-v4.0.11.js"></script>
+    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script id="en" type="text/x-handlebars-template"></script>
+    <script src="./js/libs/require.js" async='true' defer data-main="/js/config.js"></script>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/config.js'], function() {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>
