@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-4.2.2.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper-4.2.2.min.js"></script>
+    <script src="js/bscroll.min.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="ban">
+            <div class="top">
+                <i class="iconfont icon-youjiantou"></i>
+                <i class="iconfont icon-shoucang"></i>
+            </div>
+            <img src="" alt="">
+            <canvas class="can" width="100" height="100"></canvas>
+        </div>
+        <div class="tit">
+            <h3></h3>
+            <span>查看12233条评论<i class="iconfont icon-zuojiantou"></i></span>
+        </div>
+        <div class="img">
+            <img src="img/11.jpg" alt="">
+        </div>
+        <div class="con">
+            <div class="lef">
+                <span>
+                    <b>P</b>
+                    <i>停车场</i>
+                </span>
+                <span>
+                    <b>P</b>
+                    <i>停车场</i>
+                </span>
+                <span>
+                    <b>P</b>
+                    <i>停车场</i>
+                </span>
+                <span>
+                    <b>P</b>
+                    <i>停车场</i>
+                </span>
+            </div>
+            <div class="rig">
+                详情<i class="iconfont icon-zuojiantou"></i>
+            </div>
+        </div>
+        <div class="cont">
+            <ul class="list">
+                <li>
+                    <p><span>订</span>预定</p>
+                    <p>预定处100%有房</p>
+                </li>
+                <li>
+                    <h3>自主大床房</h3>
+                    <div class="bot">
+                        <p>
+                            <span>不含早 你</span>
+                            <span>入住当天18点快快快</span>
+                        </p>
+                        <span><button>预定</button></span>
+                    </div>
+                </li>
+                <li>
+                    <h3>自主大床房</h3>
+                    <div class="bot">
+                        <p>
+                            <span>不含早 你</span>
+                            <span>入住当天18点快快快</span>
+                        </p>
+                        <span><button>预定</button></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function getAtr(url) {
+            var obj = {};
+            var reg = /[\?|&](\w+)=([^&?]+)/g;
+            url.replace(reg, function($0, $1, $2) {
+                obj[$1] = encodeURI($2);
+
+            });
+            console.log(obj);
+            return obj
+        }
+        var obj = getAtr(window.location.href);
+        $('.ban img').attr('src', obj.img);
+        $('.tit h3').html('北京首都机场国际酒店');
+
+        var can = document.querySelector('.can');
+        var ctx = can.getContext('2d');
+        var deg = Math.PI / 180;
+        var num = obj.num.slice(0, 3);
+        console.log(num);
+
+        var init = 0;
+        var start = -90,
+            end = start + num / 5 * 360;
+        console.log(start + num / 5 * 360);
+
+        function drawArc() {
+            init++;
+            ctx.clearRect(0, 0, 100, 100);
+            ctx.beginPath();
+            ctx.arc(50, 50, 48, 0, 360);
+            ctx.fillStyle = '#fff';
+            ctx.fill();
+            if (init <= end - start) {
+                requestAnimationFrame(drawArc);
+            }
+            if (init > end - start) {
+                cancelAnimationFrame(drawArc);
+            }
+            ctx.beginPath();
+            ctx.arc(50, 50, 43, start * deg, (start + init) * deg);
+            ctx.strokeStyle = 'orange';
+            ctx.lineWidth = 10;
+            ctx.stroke();
+        };
+        drawArc();
+        ctx.beginPath();
+        ctx.fillStyle = 'orange';
+        ctx.font = '20px normal';
+        ctx.fillText(num + '分', 50, 50);
+        ctx.fill();
+    </script>
+</body>
+
+</html>

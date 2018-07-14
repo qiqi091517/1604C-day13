@@ -1,0 +1,351 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 0.37333rem;
+}
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.ban {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ban img {
+  width: 110%;
+  height: 5.33333rem;
+}
+
+.ban .top {
+  position: absolute;
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.26667rem;
+  align-items: center;
+}
+
+.ban .top i.iconfont {
+  width: 0.93333rem;
+  height: 0.93333rem;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 0.93333rem;
+  color: #fff;
+  font-size: 0.53333rem;
+  border-radius: 50%;
+}
+
+.ban .can {
+  position: absolute;
+  right: 0.53333rem;
+  bottom: 0.53333rem;
+}
+
+.tit {
+  height: 1.33333rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.26667rem;
+  align-items: center;
+}
+
+.tit h3 {
+  font-size: 0.53333rem;
+}
+
+.img {
+  width: 100%;
+}
+
+.con {
+  width: 100%;
+  height: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.26667rem;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.con .lef {
+  display: flex;
+}
+
+.con .lef span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.13333rem;
+}
+
+.con .lef span b {
+  margin: 0.13333rem 0;
+}
+
+.cont {
+  width: 100%;
+}
+
+.cont .list {
+  width: 100%;
+}
+
+.cont .list li:nth-child(1) {
+  height: 1.33333rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.26667rem;
+  align-items: center;
+}
+
+.cont .list li:nth-child(1) p:nth-child(1) {
+  font-size: 0.42667rem;
+}
+
+.cont .list li:nth-child(1) p:nth-child(1) span {
+  padding: 0.05333rem 0.13333rem;
+  border: 1px solid red;
+  color: red;
+  margin-right: 0.13333rem;
+}
+
+.cont .list li:nth-child(1) p:nth-child(2) {
+  color: orange;
+  font-size: 0.42667rem;
+}
+
+.cont .list li {
+  border-bottom: 1px solid #ccc;
+}
+
+.cont .list li:nth-child(2), .cont .list li:nth-child(3) {
+  padding: 0.26667rem;
+}
+
+.cont .list li:nth-child(2) h3, .cont .list li:nth-child(3) h3 {
+  font-size: 0.48rem;
+  color: #000;
+}
+
+.cont .list li:nth-child(2) .bot, .cont .list li:nth-child(3) .bot {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 1.33333rem;
+  align-items: center;
+}
+
+.cont .list li:nth-child(2) .bot p, .cont .list li:nth-child(3) .bot p {
+  margin: 0.13333rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont .list li:nth-child(2) .bot p span, .cont .list li:nth-child(3) .bot p span {
+  color: #ccc;
+}
+
+.cont .list li:nth-child(2) .bot span button, .cont .list li:nth-child(3) .bot span button {
+  background: orange;
+  padding: 0.13333rem 0.26667rem;
+  border: 0;
+  outline: 0;
+  border-radius: 0.08rem;
+  color: #fff;
+}
