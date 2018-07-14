@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
+</head>
+<body>
+    <div id="box">
+            <div class="top">
+                <span>北京</span>
+                <span>假日旅游</span>
+                <span>嗯嗯</span>            
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/3.jpg" alt=""></div>                
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        <div class="bottom">
+        </div>
+        <script id="sins" type="text/x-handlebars-template">
+            {{#each data}}
+            <dl>
+                <dd><img src="{{img}}" alt=""></dd>
+                <dt>{{title}}</dt>
+            </dl>
+            {{/each}}
+        </script>
+    </div>
+    <script src="./js/swiper-4.1.6.min.js"></script>  
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination:{
+                direction: 'vertical',
+                loop: true
+            },
+            scrollbar:{
+                el:'.swiper-scrollbar'
+            }
+        });
+    </script>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/style.js'], function () {
+            require(['index']);
+        })
+    </script>
+</body>
+</html>
