@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>假日酒店<span>登录</span></header>
+        <div class="con">
+            <div up="上拉加载" down="下拉刷新">
+                <ul class="ul-wrap">
+                </ul>
+            </div>
+            <script type="text/x-handlebars-template" id="item-tpl">
+                {{#each list}}
+                <li>{{title}}</li>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main.js'],function(){
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+{
+    "lists": [{
+        "id": 1,
+        "title": "酒店1",
+        "address" : "BBBB"
+    }, {
+        "id": 2,
+        "title": "酒店2",
+        "address" : "BBBB"
+    }, {
+        "id": 3,
+        "title": "酒店3",
+        "address" : "BBBB"
+    }, {
+        "id": 4,
+        "title": "酒店4",
+        "address" : "BBBB"
+    }, {
+        "id": 5,
+        "title": "酒店5",
+        "address" : "BBBB"
+    }, {
+        "id": 6,
+        "title": "酒店6",
+        "address" : "BBBB"
+    }, {
+        "id": 7,
+        "title": "酒店7",
+        "address" : "BBBB"
+    }, {
+        "id": 8,
+        "title": "酒店8",
+        "address" : "BBBB"
+    }, {
+        "id": 9,
+        "title": "酒店9",
+        "address" : "BBBB"
+    }, {
+        "id": 10,
+        "title": "酒店10",
+        "address" : "BBBB"
+    }, {
+        "id": 11,
+        "title": "酒店11",
+        "address" : "BBBB"
+    }]
+}
